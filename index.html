@@ -1,0 +1,15 @@
+<html><body>
+    <h3>The population of humans in the world is</h3>
+    <p id="value"></p>
+    <script>
+        function population() {
+        var population = 0;
+            for (i = 0;i < arguments.length; i ++) {
+                if (arguments[i] > population) {
+                 population = arguments[i];}
+            }
+            return population;
+        }
+        document.getElementById("value").innerHTML = ("<br>") + population(800,300,200,400) + " Billion"
+    </script>
+</body></html>
